@@ -1,0 +1,80 @@
+package appointments;
+import users.Patient;
+import users.Doctor;
+
+
+/**
+ *
+ * @author Acer
+ */
+public class Appointment {
+    
+    private String id;
+    private Patient patient;
+    private Doctor doctor;
+    private TypeAppointment type;
+    private String scheduleTime;
+    private String scheduleDate;
+
+    public Appointment() {
+    }
+
+    public Appointment(String id, Patient patient, Doctor doctor, TypeAppointment type, String scheduleTime, String scheduleDate) {
+        this.id = id;
+        this.patient = patient;
+        this.doctor = doctor;
+        this.type = type;
+        this.scheduleTime = scheduleTime;
+        this.scheduleDate = scheduleDate;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
+    }
+
+    public Doctor getDoctor() {
+        return doctor;
+    }
+
+    public void setDoctor(Doctor doctor) {
+        this.doctor = doctor;
+    }
+
+    public TypeAppointment getType() {
+        return type;
+    }
+
+    public void setType(TypeAppointment type) {
+        this.type = type;
+    }
+
+    public String getScheduleTime() {
+        return scheduleTime;
+    }
+
+    public void setScheduleTime(String scheduleTime) {
+        this.scheduleTime = scheduleTime;
+    }
+
+    public String getScheduleDate() {
+        return scheduleDate;
+    }
+
+    public void setScheduleDate(String scheduleDate) {
+        this.scheduleDate = scheduleDate;
+    }
+    
+    
+}
