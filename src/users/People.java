@@ -13,39 +13,18 @@ package users;
  */
 public abstract class People {
 
-    /**
-     * Identificador único do usuário.
-     */
     private String id;
 
-    /**
-     * Primeiro nome do usuário.
-     */
     private String firstName;
 
-    /**
-     * Sobrenome do usuário.
-     */
     private String lastName;
 
-    /**
-     * Data de nascimento no formato yyyy-MM-dd.
-     */
     private String birthday;
 
-    /**
-     * Documento de identificação no formato 000.000.000-00 (CPF).
-     */
     private String document;
 
-    /**
-     * Endereço de e-mail válido.
-     */
     private String email;
 
-    /**
-     * Número de telefone no formato (00) 9.8888-7777.
-     */
     private String phoneNumber;
 
     /**
@@ -60,6 +39,9 @@ public abstract class People {
      * @param phoneNumber número de telefone (00) 9.8888-7777
      * @throws IllegalArgumentException caso algum dado esteja fora do formato esperado
      */
+    
+    
+    
     public People(String id, String firstName, String lastName, String birthday,
                   String document, String email, String phoneNumber) {
 
